@@ -33,15 +33,17 @@ body {
 
 .container {
   width: 1158px;
-  margin: 0 16px;
+  padding: 0 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .page-header {
-  height: 72px;
 }
 
 .header-container {
   display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -60,7 +62,9 @@ body {
 
 .header-nav {
   display: flex;
-  margin: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-list {
@@ -84,6 +88,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
+  display: block;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -110,23 +116,19 @@ body {
   color: #434455;
 }
 .hero {
-  display: block;
   background: #2e2f42;
-  text-align: center;
+  padding: 188px 0;
 }
 
-.hero-container {
-  padding-top: 188px;
-  padding-bottom: 292px;
-  border-style: dotted;
-  text-align: center;
-}
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
+  letter-spacing: 0.02em;
   color: #fff;
   width: 496px;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 48px;
 }
 .hero-btn {
@@ -136,22 +138,27 @@ body {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
+
 .hero-btn:hover,
 .hero-btn:focus {
   background: #404bbf;
 }
 .main {
+  padding: 120px;
 }
 .main-title {
 }
 .main-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
 .main-item {
-  width: 264px;
+  width: calc((100% - 3 * 24px) / 4);
 }
 .main-subtitle {
   font-size: 20px;
@@ -166,6 +173,7 @@ body {
 }
 .team {
   background: #f4f4fd;
+  padding: 120px 0;
 }
 .team-title {
   font-size: 36px;
@@ -182,6 +190,7 @@ body {
 }
 .team-item {
   background-color: #ffffff;
+  width: calc((100% - 3 * 24px) / 4);
 }
 .team-img {
 }
@@ -200,6 +209,7 @@ body {
   text-align: center;
 }
 .portfolio {
+  padding: 120px 0;
 }
 .portfolio-title {
   font-size: 36px;
@@ -212,9 +222,11 @@ body {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 .pottfolio-item {
+  width: calc((100% - 2 * 24px) / 3);
 }
 .portfolio-link {
 }
@@ -236,11 +248,17 @@ body {
 
 .footer {
   background: #2e2f42;
+  padding: 100px 0;
 }
+
+.footer-container {
+}
+
 .footer-text {
   color: #f4f4fd;
   letter-spacing: 0.02em;
   line-height: 1.5;
+  width: 264px;
 }
 .footer-logo .logo-part {
   color: #f4f4fd;
