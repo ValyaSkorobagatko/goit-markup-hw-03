@@ -276,7 +276,9 @@ body {
   font-size: 20px;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
+
 .portfolio-text {
   font-size: 16px;
   letter-spacing: 0.02em;
